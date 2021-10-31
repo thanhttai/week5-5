@@ -31,7 +31,7 @@ const MoviePages = () => {
 
 
     return (
-        <div className="App" >
+        <div className="App1" >
             <div className="app-container" >
                 <div className="container">
                     <div className="row">
