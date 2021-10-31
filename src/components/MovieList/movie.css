@@ -39,3 +39,10 @@ img.show-poster {
 h5 {
     position: absolute;
 }
+.navbar {
+    position: fixed;
+    opacity: .7;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
