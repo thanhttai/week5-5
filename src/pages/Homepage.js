@@ -19,23 +19,23 @@ const HomePage = () => {
         const getData = async () => {
             const data1 = await fetch(Url.getTrending);
             const movieList1 = await data1.json();
-            setTrending(movieList1.results);
+            setTrending(movieList1);
 
             const data2 = await fetch(Url.getTV);
             const movieList2 = await data2.json();
-            setTvShows(movieList2.results);
+            setTvShows(movieList2);
 
             const data3 = await fetch(Url.getActions);
             const movieList3 = await data3.json();
-            setActionMovies(movieList3.results);
+            setActionMovies(movieList3);
 
             const data4 = await fetch(Url.getDrama);
             const movieList4 = await data4.json();
-            setDramaMovies(movieList4.results);
+            setDramaMovies(movieList4);
 
             const data5 = await fetch(Url.getAnimation);
             const movieList5 = await data5.json();
-            setAnimationMovies(movieList5.results);
+            setAnimationMovies(movieList5);
         };
         getData();
     }, []);

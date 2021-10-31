@@ -27,7 +27,7 @@ const MovieList = ({ trending, tvShows, actionMovies, dramaMovies, animationMovi
                 navigation={true}
 
             >
-                {trending && trending.map((item) => {
+                {trending?.results && trending?.results?.map((item) => {
                     return (
                         <SwiperSlide onClick={() => { handleMovieClick(item); }} key={item.id}>
                             <img src={`https://image.tmdb.org/t/p/original${item?.poster_path}`} alt="Show Poster" className="show-poster"></img>
@@ -50,7 +50,7 @@ const MovieList = ({ trending, tvShows, actionMovies, dramaMovies, animationMovi
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-                {tvShows && tvShows.map((item) => {
+                {tvShows?.results && tvShows?.results?.map((item) => {
                     return (
                         <SwiperSlide onClick={() => { handleMovieClick(item); }} key={item.id}>
                             <img src={`https:image.tmdb.org/t/p/original${item?.poster_path}`} alt="Show Poster" className="show-poster"></img>
@@ -72,7 +72,7 @@ const MovieList = ({ trending, tvShows, actionMovies, dramaMovies, animationMovi
                 navigation={true}
 
             >
-                {actionMovies && actionMovies.map((item) => {
+                {actionMovies?.results && actionMovies?.results?.map((item) => {
                     return (
                         <SwiperSlide onClick={() => { handleMovieClick(item); }} key={item.id}>
                             <img src={`https:image.tmdb.org/t/p/original${item?.poster_path}`} alt="Show Poster" className="show-poster"></img>
@@ -94,7 +94,7 @@ const MovieList = ({ trending, tvShows, actionMovies, dramaMovies, animationMovi
                 navigation={true}
 
             >
-                {dramaMovies && dramaMovies.map((item) => {
+                {dramaMovies?.results && dramaMovies?.results?.map((item) => {
                     return (
                         <SwiperSlide onClick={() => { handleMovieClick(item); }} key={item.id}>
                             <img src={`https:image.tmdb.org/t/p/original${item?.poster_path}`} alt="Show Poster" className="show-poster"></img>
@@ -116,7 +116,7 @@ const MovieList = ({ trending, tvShows, actionMovies, dramaMovies, animationMovi
                 navigation={true}
 
             >
-                {animationMovies && animationMovies.map((item) => {
+                {animationMovies?.results && animationMovies?.results?.map((item) => {
                     return (
                         <SwiperSlide onClick={() => { handleMovieClick(item); }} key={item.id}>
                             <img src={`https:image.tmdb.org/t/p/original${item?.poster_path}`} alt="Show Poster" className="show-poster"></img>
