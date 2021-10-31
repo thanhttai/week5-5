@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -34,5 +32,91 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.navbar{
+  position: fixed;
+  opacity: 0.7;
+  width: 100%;
+  z-index: 1;
+}
+/* img{
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+} */
+.mast-head{
+  position: relative;
+  color: #fff;
+
+}
+
+.mast-body{
+  position: absolute;
+  bottom: 20px; 
+  width: 40%;
+  padding: 0 100px;
+  margin-bottom: 60px;
+}
+button.btn.play-btn.white {
+  width: 100px;
+  height: 40px;
+  background: #fff;
+  outline:none;
+  color:#000 !important;
+}
+button.btn.info-btn.gray {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  margin-left: 16px;
+  width: 140px;
+  height: 40px;
+outline: none;
+}
+h2.mast-title {
+  font-size: 70px;
+  text-align: center;
+  }
+  .video__btn-lm{
+    width: 60vw;
+    height: 60vh;
+    border-radius: 3px;
+
+  }
+  .modal-content{
+    /* width:100%;
+    height:100% */
+  }
+
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+    display: flex;
+    justify-content: center !important;
+  }
+  .modal-content {
+    width: 60vw !important;
+    background:rgba(0,0,0,0.76) !important;
+    color: #fff !important;
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+  .modal-header {
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  .heading-title{
+    font-size:30px;
+  }
+
+@keyframes FadeIn {
+  from{
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
   }
 }
