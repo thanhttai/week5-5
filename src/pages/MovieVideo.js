@@ -19,7 +19,7 @@ const MovieVideo = ({ movieDetail }) => {
             };
         }
         fetchYoutubeId()
-    })
+    }, [])
 
     return (
         <div style={{ width: '100%' }}>

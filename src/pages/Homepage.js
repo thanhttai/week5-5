@@ -39,7 +39,6 @@ const HomePage = () => {
         };
         getData();
     }, []);
-    console.log(movieClicked)
     return (
         <div className="HomePage">
             <BackgroundImage />

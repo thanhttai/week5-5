@@ -20,15 +20,16 @@ const MoviePages = () => {
                 `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
             );
             const json = await resp.json();
+
             setMovieDetail(json);
 
 
         };
         fetchMovieDetail();
-    }, [id]);
+    }, []);
 
 
-
+    console.log(movieDetail)
 
     return (
         <div className="App1" >

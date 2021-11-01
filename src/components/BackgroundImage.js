@@ -31,13 +31,15 @@ const BackgroundImage = () => {
 
             setRandomMovie(result.results[Math.floor(Math.random() * result.results.length - 1)]);
 
-
-
-
-
         }
         getData();
     }, []); //no dependencies
+    const getDate = () => {
+        let date = randomMovie.first_air_date
+        let today = Date.now()
+        console.log(today)
+    }
+    getDate()
 
     const fetchVideo = async () => {
         if (randomMovie?.id !== undefined) {
@@ -52,7 +54,6 @@ const BackgroundImage = () => {
         }
     }
     fetchVideo()
-    console.log(randomMovie)
     return (
         <header
             className="mast-head"
