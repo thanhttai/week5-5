@@ -124,4 +124,7 @@ h2.mast-title {
   to {
       opacity: 0;
   }
+} 
+.modal-dialog {
+  margin: auto !important;
 }

@@ -49,3 +49,6 @@ h5 {
 .App1{
     margin:40px;
 }
+.modal-dialog {
+    margin: auto !important;
+}

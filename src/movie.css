@@ -28,3 +28,6 @@
         height:90vh !important;
 
     }
+    .modal-dialog {
+        margin: auto !important;
+    }
